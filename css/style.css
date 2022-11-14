@@ -20,6 +20,26 @@ body {
     letter-spacing: 0.03em;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    padding: 0px 15px;
+    margin: 0 auto;
+
+    outline: 2px solid red;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -41,15 +61,27 @@ body {
 
 /* Section */
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .section-title {
+    margin-bottom: 50px;
+
     color: var(--title-text-color);
 
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
+    text-align: center;
 }
 
 /* Header */
+
+.header {
+    background-color: burlywood;
+}
 
 .logo {
     color: var(--logo-black-color);
@@ -104,8 +136,9 @@ body {
     line-height: 1.36;
     letter-spacing: 0.06em;
 
+    margin-bottom: 30px;
+
     text-align: center;
-    text-transform: uppercase;
 }
 
 /* Section Features */
@@ -116,6 +149,17 @@ body {
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+.features {
+    background-color: aquamarine;
+}
+
+/* ---------Work---------- */
+.work {
+    background-color: #757575;
 }
 
 /* Section OurTeam */
@@ -126,11 +170,17 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+
+    margin-bottom: 10px;
 }
 
 .team-list .text {
     font-size: 16px;
     line-height: 1.19;
+}
+
+.team .photo {
+    margin-bottom: 30px;
 }
 
 .team {
@@ -141,10 +191,16 @@ body {
 
 .footer {
     background-color: var(--primary-bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer .logo {
+    display: inline-block;
+
     color: var(--logo-white-color);
+
+    margin-bottom: 10px;
 }
 
 .address {
@@ -152,7 +208,17 @@ body {
 }
 
 .footer-list .location {
+    display: inline-block;
+
     color: var(--bg-white-color);
+
+    margin-bottom: 9px;
+}
+
+.footer-list .email {
+    display: inline-block;
+
+    margin-bottom: 9px;
 }
 
 .footer-list .contacts {
@@ -206,11 +272,14 @@ body {
     font-size: 16px;
     text-align: center;
     border-radius: 4px;
+    border: none;
 }
 
 .button.primary {
     background-color: var(--accent-color);
     color: var(--bg-white-color);
+
+    padding: 10px 32px;
 
     font-weight: 700;
     line-height: 1.88;
@@ -219,6 +288,8 @@ body {
 
 .button.secondary {
     background-color: var(--secondary-bg-color);
+
+    padding: 6px 22px;
 
     font-weight: 500;
     line-height: 1.62;
