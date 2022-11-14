@@ -1,0 +1,240 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196f3;
+    --bg-white-color: #ffffff;
+    --primary-bg-color: #2f303a;
+    --secondary-bg-color: #f5f4fa;
+    --logo-black-color: #000000;
+    --logo-white-color: #ffffff;
+    --footer-text-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+    background-color: var(--bg-white-color);
+    color: var(--primary-text-color);
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+/* Section */
+
+.section-title {
+    color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+}
+
+/* Header */
+
+.logo {
+    color: var(--logo-black-color);
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.logo > .accent {
+    color: var(--accent-color);
+}
+
+.site-nav .link {
+    color: var(--title-text-color);
+
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.header-contacts .link {
+    color: var(--primary-text-color);
+
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.header-contacts .link:hover,
+.header-contacts .link:focus {
+    color: var(--accent-color);
+}
+
+/* Section Hero */
+
+.hero {
+    background-color: var(--primary-bg-color);
+}
+
+.hero .title {
+    color: var(--bg-white-color);
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Section Features */
+
+.features-list .title {
+    color: var(--title-text-color);
+
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+/* Section OurTeam */
+
+.team-list .title {
+    color: var(--title-text-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.team-list .text {
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.team {
+    background-color: var(--secondary-bg-color);
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--primary-bg-color);
+}
+
+.footer .logo {
+    color: var(--logo-white-color);
+}
+
+.address {
+    font-style: normal;
+}
+
+.footer-list .location {
+    color: var(--bg-white-color);
+}
+
+.footer-list .contacts {
+    color: var(--footer-text-color);
+}
+
+.footer-list .location:hover,
+.footer-list .location:focus {
+    color: var(--accent-color);
+}
+
+.footer-list .contacts:hover,
+.footer-list .contacts:focus {
+    color: var(--accent-color);
+}
+
+/* Portfolio */
+
+.portfolio-list .title {
+    color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.portfolio-list .text {
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+.portfolio-button .button:hover,
+.portfolio-button .button:focus {
+    background-color: var(--accent-color);
+    color: var(--bg-white-color);
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+/* Button */
+
+.button {
+    background-color: var(--bg-white-color);
+    color: var(--title-text-color);
+    cursor: pointer;
+
+    font-family: inherit;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.button.primary {
+    background-color: var(--accent-color);
+    color: var(--bg-white-color);
+
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+}
+
+.button.secondary {
+    background-color: var(--secondary-bg-color);
+
+    font-weight: 500;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+}
+
+/* Active Page */
+.site-nav .current {
+    color: var(--accent-color);
+}
+
+/* Active button */
+.portfolio-button .current {
+    background-color: var(--accent-color);
+    color: var(--bg-white-color);
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+}
