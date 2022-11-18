@@ -82,6 +82,10 @@ img {
     text-align: center;
 }
 
+.nopadding {
+    padding-top: 0px;
+}
+
 /* Header */
 
 .header {
