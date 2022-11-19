@@ -245,7 +245,8 @@ img {
 }
 
 .team-list .item {
-    width: calc((100%-90px) / 4);
+    flex-basis: calc((100%-90px) / 4);
+
     margin-right: var(--main-gap);
 
     background: var(--bg-white-color);
